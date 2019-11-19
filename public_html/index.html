@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--
+Portal de notícias 
+http://www.naldoaraujo.com
+http://67.23.245.159/~kbelybkf/
+https://www.romanews.com.br/
+-->
+<html>
+    <head>
+        <title>Naldo Araújo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/style.css" rel="stylesheet"/>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <!--primeiro topo - redes sociais-->
+        <div class="topo">
+            <div class="topoint">
+                <div class="topoleft">
+                    <ul>
+                        <li><a href="./">HOME</a></li>
+                        <li><a href="quem-somos">QUEM SOMOS</a></li>
+                        <li><a href="anincie-aqui">ANUNCIE AQUI</a></li>
+                        <li><a href="contato">CONTATO</a></li>
+                    </ul>
+                </div>
+                <!--                <div class="toporight">
+                                    <input type="image" src="assets/images/lupa_branca2.png" border="0" width="26" height="26">
+                                    <input type="text" name="busca" placeholder="Buscar..." class="topobusca"/>
+                                    <a href=""><img src="assets/images/Twitter2.png" border="0" width="26" height="26" title="Twitter"/></a>
+                                    <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26" title="Youtube"/></a>
+                                    <a href=""><img src="assets/images/whatsapp.png" border="0" width="26" height="26" title="WhatsApp"/></a>
+                                    <a href=""><img src="assets/images/instagram.png" border="0" width="26" height="26" title="Instagram"/></a>
+                                    <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26" title="Facebook"/></a>               
+                                </div>-->
+            </div>
+        </div>
+        <!--segundo topo - publicidade-->
+        <div class="topo2">
+            <div class="topo2int">
+                <div class="logo">
+                    <a href="./"><img src="assets/images/logoNaldoAraujo.png" border="0" width="300" /></a>
+                </div>
+                <div class="toporight">
+                    <input type="image" src="assets/images/lupa_branca2.png" border="0" width="26" height="26">
+                    <input type="text" name="busca" placeholder="Buscar..." class="topobusca"/>
+                    <a href="@jornalistanaldo" target="_blank"><img src="assets/images/Twitter2.png" border="0" width="26" height="26" title="Twitter"/></a>
+                    <a href="https://www.youtube.com/channel/UCdocpz83RKBxW7S2xQVbi2g" target="_blank"><img src="assets/images/youtube.png" border="0" width="26" height="26" title="Youtube"/></a>
+                    <a href="https://wa.me/5591980374438?text=Mensagem%20de%20Naldo%20Araújo%20aqui" target="_blank"><img src="assets/images/whatsapp.png" border="0" width="26" height="26" title="WhatsApp"/></a>
+                    <a href="https://www.instagram.com/naldo.araujo2" target="_blank"><img src="assets/images/instagram.png" border="0" width="26" height="26" title="Instagram"/></a>
+                    <a href="https://www.facebook.com/naldo.araujo2" target="_blank"><img src="assets/images/facebook.png" border="0" width="26" height="26" title="Facebook"/></a>               
+                </div>
+                <!--                <div class="banner">
+                                    <img src="assets/images/anuncie-aqui-banner.png" border="0" width="650" height="80"/>
+                                </div>-->
+            </div>
+        </div>
+        <!--menu-->
+        <div class="menu">
+            <div class="menuint">
+                <img src="assets/images/menu.png" border="0" width="40" height="40" 
+                     class="menumobile" onclick="toggleMenu()">
+                <ul id="menu">
+                    <li class=""><a href="cidade.html" class="item_menu1">CIDADE</a></li>
+                    <li>
+                        <a href="para.html" class="item_menu2">PARÁ</a>
+                    </li>
+                    <li><a href="brasil.html" class="item_menu3">BRASIL</a></li>
+                    <li><a href="mundo.html" class="item_menu4">MUNDO</a></li>
+                    <li><a href="esporte.html" class="item_menu5">ESPORTE</a></li>
+                    <li><a href="arte_cultura.html" class="item_menu6">ARTE E CULTURA</a></li>
+                    <li><a href="policia.html" class="item_menu7">POLÍCIA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Publicidade -->
+        <div class="widget_conteudo">
+            <img src="assets/images/anuncie-aqui-banner.png" border="0" width="711" height="141"/>
+        </div>
+
+        <!--ùltimas noícias-->
+        <div class="ultimasnoticias">
+            <div class="ultimasnoticiasitem">
+                <div class="ultnoticiasarea">
+                    <div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="ultnoticiasnoticia">
+                        <a href="https://g1.globo.com/pa/para/noticia/2019/08/15/mulher-e-presa-em-flagrante-com-11-kg-de-maconha-em-barra-em-abaetetuba-no-pa.ghtml">Mulher é presa com em flagrante com 1,1 kg de maconha em Abaetetuba, no PA
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containerint">
+                <div class="leftside">
+                    <div class="slideshow" id="slideshow">
+                        <div class="slidebolinhas">
+                            <div class="bolinha" onclick="mudarSlide(0)"></div>
+                            <div class="bolinha" onclick="mudarSlide(1)"></div>
+                            <div class="bolinha" onclick="mudarSlide(2)"></div>
+                            <div class="bolinha" onclick="mudarSlide(3)"></div>
+                        </div>
+                        <div class="slideshowarea">
+                            <!--slide 01-->
+                            <a href="https://g1.globo.com/pa/para/noticia/2019/09/02/mpf-pede-operacao-urgente-para-evitar-ataques-de-madeireiros-a-povo-indigena-tembe-tenetehara-no-pa.ghtml">
+                                <div class="slide" style="background-image: url('https://s2.glbimg.com/wTHJxZaA1p1ZFCQ8CTBXPqujLn8=/0x0:400x266/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/x/A/lyqVMSQBALjpSXIubRcA/tembe.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">
+                                            MPF pede operação urgente para evitar ataques de madeireiros a povo indígena Tembé Tenetehara no PA.
+                                        </div>
+                                        <div class="slideinfo_subtitulo">
+                                            Segundo o MPF, as ameaças começaram em 2018, mas se intensificaram na última terça-feira, 27, quando os indígenas chegaram a expulsar os invasores.
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--slide 02-->
+                            <a href="https://g1.globo.com/pa/para/especial-publicitario/vale/noticia/2019/09/02/instituto-tecnologico-vale-no-para-esta-com-inscricoes-abertas-para-mestrado-profissional.ghtml">
+                                <div class="slide" style="background-image: url('https://s2.glbimg.com/8GI-6LO6K3xuS9WISVysnaydY_w=/0x0:700x467/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/3/A/e4KazIRU2tGZ3Jtm1bmA/mestrado-1.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Instituto Tecnológico Vale no Pará está com inscrições abertas para Mestrado Profissional</div>
+                                        <div class="slideinfo_subtitulo">São 20 vagas para a comunidade</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--slide 03-->
+                            <a href="https://g1.globo.com/pa/para/noticia/2019/09/02/duas-adolescentes-morrem-e-uma-fica-ferida-apos-serem-atropeladas-por-caminhao-bitrem-em-maraba.ghtml">
+                                <div class="slide" style="background-image: url('https://s2.glbimg.com/f3cbjEKi0tjJiT86zWu7ujJnQVU=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/m/f/bODZd0QQ68SMdgD2u3tA/adolescentes.jpg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Duas adolescentes morrem e uma fica ferida após serem atropeladas por caminhão bitrem em Marabá</div>
+                                        <div class="slideinfo_subtitulo">Acidente aconteceu no domingo (1º) na Estrada do Rio Preto. Vítimas, com idades entre 16 e 17 anos , estavam de moto e morreram no local.</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--slide 04-->
+                            <a href="https://g1.globo.com/pa/para/noticia/2019/09/02/policia-identifica-responsavel-por-ameacas-a-jornalista-que-denunciou-dia-do-fogo.ghtml">
+                                <div class="slide" style="background-image: url('https://s2.glbimg.com/SskXXPmxdKFTzEMDEb598SOPhSY=/0x0:1280x856/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/h/b/ee9FkVSM2jbEqe501ZmA/whatsapp-image-2019-09-02-at-17.37.37.jpeg')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Polícia identifica responsável por ameaças a jornalista que denunciou Dia do Fogo</div>
+                                        <div class="slideinfo_subtitulo">Suspeito seria administrador de um grupo que convocou queimadas. Jornalista procurou a polícia após folheto com mensagens caluniosas e difamatórias contra ele serem distribuídos em Novo Progresso. </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Noticias-->
+                    <div class="widget">
+                        <div class="widget_titulo">CIDADES</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <a href="https://g1.globo.com/sp/sao-paulo/noticia/2019/09/02/adolescente-que-aparece-em-video-sendo-torturado-relata-que-foi-chicoteado-com-fios-eletricos-em-sp.ghtml">
+                                    <div class="noticiaitem noticiabig">
+                                        <div class="noticiaimg">
+                                            <img src="assets/images/noticia/tortura2.jpg" border="0" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Adolescente que aparece em vídeo sendo torturado relata que foi chicoteado com fios elétricos em SP
+                                        </div>
+                                        <div class="noticiainfo">Jovem afirmou que dois seguranças o torturaram depois de ele tentar furtar barra de chocolate. Polícia investiga caso como tortura e seguranças foram afastados.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 2-->
+                                <a href="">
+                                    <div class="noticiaitem">
+                                        <div class="noticiaimg">
+                                            <img src="assets/images/noticia/honor-9x.jpg" border="0" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Novo celular chinês faz sucesso e vende 3 milhões em um mês</div>
+                                        <div class="noticiainfo">Algum comentário</div>
+                                    </div>
+                                </a>
+                                <!--notícia -->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/noticia/noticia01.jpeg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">MEC corta mais 5,6 mil bolsas da Capes para pós-graduação</div>
+                                    <div class="noticiainfo">Bolsonaro vai assinar MP que cria carteira digital para alunos </div>
+                                </div>
+                                <!--notícia 3-->
+                                <a href="https://g1.globo.com/go/goias/noticia/2019/09/02/estudante-de-direito-suspeita-de-extorsao-por-meio-de-sites-de-relacionamento-e-solta-e-volta-para-anapolis.ghtml">
+                                    <div class="noticiaitem">
+                                        <div class="noticiaimg">
+                                            <img src="assets/images/noticia/noticia02.jpeg" border="0" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Suspeita de extorsão em sites de namoro é solta e volta para GO</div>
+                                        <div class="noticiainfo">Algum comentário</div>
+                                    </div>
+                                </a>
+                                <!--notícia 4-->
+                                <a href="Guardas afirmam não ter visto nem ouvido Marcelo Piloto dar 53 facadas em jovem na prisão no Paraguai">
+                                    <div class="noticiaitem">
+                                        <div class="noticiaimg">
+                                            <img src="assets/images/noticia/noticia04.png" border="0" width="80" height="80">
+                                        </div>
+                                        <div class="noticiatitulo">Guardas dizem não ter visto piloto ter dado 53 facadas em jovem na prisão</div>
+                                        <div class="noticiainfo">Guardas afirmam não ter visto nem ouvido Marcelo Piloto dar 53 facadas em jovem na prisão no Paraguai</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--PARÁ-->
+                    <div class="widget">
+                        <div class="widget_titulo">PARÁ</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/esporte/esporte01.jpg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/esporte/esporte02.jpeg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/esporte/esporte03.jpeg" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--BRASIL-->
+                    <div class="widget">
+                        <div class="widget_titulo">BRASIL</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--MUNDO-->
+                    <div class="widget">
+                        <div class="widget_titulo">MUNDO</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--ESPORTE-->
+                    <div class="widget">
+                        <div class="widget_titulo">ESPORTE</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--ARTE-->
+                    <div class="widget">
+                        <div class="widget_titulo">ARTE E CULTURA</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+
+                    <!--Publicidade -->
+                    <div class="widget_banner">
+                        <div class="widget_conteudo_banner">
+                            <img src="assets/images/anuncie-aqui-banner.png"/>
+                        </div>
+                    </div>
+
+                    <!--POLÍCIA-->
+                    <div class="widget">
+                        <div class="widget_titulo">POLÍCIA</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaarea1">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas Notícia das últimas horas
+                                        Notícia das últimas horass
+                                    </div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div class="noticiaarea2">
+                                <!--notícia 1-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 2-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 3-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                                <!--notícia 4-->
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="" border="0" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Notícia das últimas horas</div>
+                                    <div class="noticiainfo">Algum comentário</div>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>Todos os direitos reservados</p>
+                    </footer>
+                </div>
+
+                <div class="rightside">
+                    <!--videos-->
+                    <div class="widget"> 
+                        <div class="widget_titulo">
+                            <a href="video.html" title="Vídeos de Naldo Araújo">
+                                <img src="assets/images/panoramaonline.png" border="0" width="296" height="29">
+                            </a>
+                        </div>
+                        <div class="widget_conteudo">
+                            <iframe src="https://www.youtube.com/embed/yu1rNtgxPRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>                                
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="widget"> 
+                        <div class="widget_titulo">NOTÍCIAS EM DESTAQUES</div>
+                        <div class="widget_conteudo">
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/08/15/mulher-e-presa-em-flagrante-com-11-kg-de-maconha-em-barra-em-abaetetuba-no-pa.ghtml">Mulher é presa com em flagrante com 1,1 kg de maconha em Abaetetuba, no PA
+                                </a>         
+                            </div>
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/07/31/moradores-de-abaetetuba-interditam-pa-151-pela-falta-de-medicos-em-posto-de-saude-do-municipio.ghtml">Moradores de Abaetetuba interditam PA-151 pela falta de médicos em posto de saúde do município
+                                </a>                               
+                            </div>
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/07/07/moradores-da-vila-de-beja-em-abaetetuba-protestam-na-pa-409.ghtml">Moradores da Vila de Beja, em Abaetetuba, protestam na PA-409
+                                </a>                               
+                            </div>
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/05/22/policia-identifica-suspeitos-de-envolvimento-com-o-assassinato-de-pm-em-abaetetuba.ghtml">Polícia identifica suspeitos do assassinato de PM em Abaetetuba
+                                </a>                               
+                            </div>
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/05/15/detento-e-encontrado-morto-no-centro-de-recuperacao-regional-de-abaetetuba.ghtml">Detento é encontrado morto no Centro de Recuperação Regional de Abaetetuba
+                                </a>                               
+                            </div>
+                            <div class="noticia_item">
+                                <a href="https://g1.globo.com/pa/para/noticia/2019/05/04/juiz-proibe-recebimento-de-gado-a-empresa-que-teria-despejado-fezes-e-urina-de-bois-em-igarape-no-pa.ghtml">Juiz proíbe recebimento de gado a empresa que teria despejado fezes e urina de bois em igarapé no PA
+                                </a>                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--colunistas-->
+                    <div class="widget_col"> 
+                        <div class="widget_titulo_col">COLUNISTAS</div>
+                        <div class="widget_conteudo_col">
+                            <div class="noticia_item_col">
+                                <img src="assets/images/colunistas/FOTO_JORGE.jpeg"/>
+                                <p>Jorge Miranda de Cruz e Souza </p>                            
+                            </div>
+                            <div class="noticia_item_col">
+                                <img src="assets/images/colunistas/FOTO_NALDO.jpeg"/><br>
+                                <p>Naldo  da Silva Sauro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--publicidade-->
+                    <div class="widget">
+                        <div class="widget_titulo">PUBLICIDADE</div>
+                        <div class="widget_conteudo">
+                            <img src="assets/images/publicidade01.jpeg" border="0" width="275"/>
+                        </div>
+                        <div class="widget_conteudo">
+                            <img src="assets/images/publicidade02.jpg" border="0" width="275"/>
+                        </div>
+                        <div class="widget_conteudo">
+                            <img src="assets/images/publicidade03.jpeg" border="0" width="275"/>
+                        </div>
+                        <div class="widget_conteudo">
+                            <img src="assets/images/publicidade04.png" border="0" width="275"/>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">REDES SOCIAIS</div>
+                        <div class="widget_conteudo">
+                            <a href=""><img src="assets/images/Twitter2.png" border="0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/whatsapp.png" border="0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/instagram.png" border="0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"/></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
