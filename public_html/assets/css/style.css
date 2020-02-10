@@ -249,7 +249,25 @@ body{
     float: right;
     margin-left: 28px;
 }
+.footer_mobile{
+    display: none;
+}
 .widget{
+    border: 1px solid darkgrey;
+    background-color: white;
+    margin-bottom: 4px;
+}
+.widget_video{
+    border: 1px solid darkgrey;
+    background-color: white;
+    margin-bottom: 4px;
+}
+.widget_noticia_destaque{
+    border: 1px solid darkgrey;
+    background-color: white;
+    margin-bottom: 4px;
+}
+.widget_publicidade{
     border: 1px solid darkgrey;
     background-color: white;
     margin-bottom: 4px;
@@ -700,6 +718,9 @@ iframe{
     .rightside{
         display: none;
     }
+    footer{
+        display: none;
+    }
     .leftside{
         float: none;
         width: auto;
@@ -778,6 +799,31 @@ iframe{
         width: 290px;
         font-size: 15px;
     }
-  
+    .rightside{
+        display: block !important;
+        width: 100%;
+    }
+    .widget_video{
+        max-width: 320px;
+        margin-top: 4px;
+    }
+    .widget_noticia_destaque{
+        display: none;
+    }
+    .widget_col{
+        max-width: 320px;
+        margin-top: 8px;
+    }
+    .widget_publicidade{
+        display: none;
+    }
+    .widget_sociais{
+        display: none;
+    }
+    .footer_mobile{
+        display: block !important;
+/*        max-width: 320px;
+        margin-top: 4px;*/
+    }
 }
 
